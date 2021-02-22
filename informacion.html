@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="CSS/estilos.css">
+        <title>Portafolio de Jean Paul Mata</title>
+    </head>
+
+    <body>
+        <div id="sidemenu" class="menu-collapsed">
+            <!-- header -->
+            <div id="header">
+                <div id="title"><span>MENU</span></div>
+                <div id="menu-btn">
+                    <div class="btn-hamburger"></div>
+                    <div class="btn-hamburger"></div>
+                    <div class="btn-hamburger"></div>
+                </div>
+            </div>
+            <!-- profile -->
+            <div id="profile">
+                <div id="photo"><img src="IMG/razer.png" alt="Foto de perfil"></div>
+                <div id="name"><span>JEAN PAUL</span></div>
+            </div>
+            <!-- items -->
+            <div id="menu-items">
+                <div class="item">
+                    <a href="index.html">
+                        <div class="icon"><img src="IMG/logocasa (2)ya.png" alt="informacion"></div>
+                        <div class="title">informacion</div>
+                    </a>
+                    <div class="item-separator"></div>
+                    <a href="contacto.html">
+                        <div class="icon"><img src="IMG/contactoya.png" alt="Contacto"></div>
+                        <div class="title">Contacto</div>
+                    </a>
+                    <div class="item-separator"></div>
+                </div>
+            </div>
+        </div>
+        <script>
+            const btn = document.querySelector('#menu-btn');
+            const menu = document.querySelector('#sidemenu');
+            btn.addEventListener('click', e =>{
+                menu.classList.toggle("menu-expanded");
+                menu.classList.toggle("menu-collapsed");
+
+                document.querySelector('body').classList.toggle('body-expanded');
+            });
+        </script>
+        
+        <h2 id="titleA" align="center">Informacion</h2>
+        <section id="bodyA" class="home">
+
+            <div class="in-flex">Soy un hombre de 22 años que siempre se ha interesado por la tecnologia y mis pasatiempos son: jugar videojuegos ver peliculas, escuchar musica y los deportes de contacto</div>
+            <div class="in-flex">
+
+                <div>Estudie en el colegio San Luis Gonzaga de cartago, lleve cursos de excel y cursos de ingles y actualmente estoy estudiando en la universidad florencio del castillo desde hace 2 años</div>  
+                <div>Conocimientos basicos en redes asi como programacion, excel, bases de datos, edicion audiovisual, y edicion musical, experiencia laboral en edicion de fotos, videos y paginas para una empresa</div>
+            </div>     
+        </section>       
+        <footer>
+
+            <div class="container-footer-all">
+                 <div class="container-body">
+                     <div class="colum1">
+                         <h1>Sobre Mi: </h1>
+                         <p>Tengo 22 años vivo en Costa Rica y es mi primera vez desempeñando un trabajo en programacion de este calibre y mi meta es llegar a aprender a mejorar como mi rol de programador para el futuro</p>
+                     </div>
+     
+                     <div class="colum2">
+                         <h1>Encuentrame en: </h1>
+                         <div class="row">
+                             <img src="IMG/faceverde (2).png">
+                             <label>FB: Jean Paul Mata</label>
+                         </div>
+                         <div class="row">
+                             <img src="IMG/instaverdeya.png">
+                             <label>IG: Jean Paul Mata</label>
+                         </div>
+                     </div>
+     
+                     <div class="colum3">
+                         <h1>Mas Informacion: </h1>
+                         <div class="row2">
+                             <img src="IMG/ubicacionverde (2).png">
+                             <label>Guadalupe de Cartago, Costa Rica</label>
+                         </div>
+                         <div class="row2">
+                             <img src="IMG/telefono verde (2).png">
+                             <label>+506-8821-9155</label>
+                         </div>
+                         <div class="row2">
+                             <img src="IMG/correoverde (2)ya.png">
+                              <label>jeanp1012@hotmail.com</label>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <div class="container-footer">
+                    <div class="footer">
+                         <div class="copyright">
+                             © 2021 Todos los Derechos Reservados | <a href="">Jean Paul Mata Alarcon</a>
+                         </div>
+     
+                         <div class="information">
+                             <a href="">Informacion Compañia</a> | <a href="">Politica de Privacidad</a> | <a href="">Terminos y Condiciones</a>
+                         </div>
+                     </div>
+     
+                 </div>
+     
+         </footer>
+    </body>
+</html>
